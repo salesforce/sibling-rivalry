@@ -26,9 +26,7 @@ import random
 from agents.maze_agents.ant_maze.env import maze_env_utils
 
 # Directory that contains mujoco xml files.
-# MODEL_DIR = 'environments/assets'
 MODEL_DIR = os.path.join(os.path.dirname(__file__), 'assets')
-# MODEL_DIR = '/export/home/alex-scratchpad/mujoco/testing/agents/maze_agents/ant_maze/assets/'
 
 
 class MazeEnv(gym.Env):

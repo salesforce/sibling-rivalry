@@ -1,3 +1,8 @@
+# Copyright (c) 2019, salesforce.com, inc.
+# All rights reserved.
+# SPDX-License-Identifier: MIT
+# For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/MIT
+
 import torch
 import numpy as np
 from agents.maze_agents.toy_maze.env.mazes import mazes_dict, make_crazy_maze, make_experiment_maze, make_hallway_maze, make_u_maze

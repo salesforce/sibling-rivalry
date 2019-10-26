@@ -1,3 +1,8 @@
+# Copyright (c) 2019, salesforce.com, inc.
+# All rights reserved.
+# SPDX-License-Identifier: MIT
+# For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/MIT
+
 import os
 import json
 import torch
@@ -5,7 +10,6 @@ import numpy as np
 import torch.distributed as dist
 from dist_train.utils.shared_optim import SharedAdam as Adam
 from dist_train.workers.utils import create_worker_logger, ReplayBuffer
-# from dist_train.utils import BASE_DIR
 from agents import agent_classes
 
 
