@@ -25,7 +25,7 @@ def synchronous_worker(rank, config, settings):
     # Create a distributed process so the workers can share gradients and other such things
     dist.init_process_group(
         backend='gloo',
-        init_method='tcp://127.0.0.1:43221',
+        init_method='tcp://127.0.0.1:43220',
         rank=rank,
         world_size=settings.N
     )

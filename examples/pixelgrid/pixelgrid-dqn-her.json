@@ -1,0 +1,26 @@
+{
+  "agent_type": "pixgrid",
+  "learner_type": "HER",
+  "train_type": "dqn",
+
+  "learning_rate": 0.001,
+  "updates_per_cycle": 40,
+  "cycles_per_epoch": 50,
+  "rollouts_per_cycle": 4,
+
+  "batch_size": 128,
+  "min_buffer_size": 256,
+  "buffer_capacity": 500000,
+
+  "eval_iters": 20,
+  "greedy_eval": 1,
+
+  "agent_params": {
+    "env_params": {
+      "n": 50,
+      "w": 13
+    },
+    "epsilon": 0.2,
+    "gamma": 0.98
+  }
+}

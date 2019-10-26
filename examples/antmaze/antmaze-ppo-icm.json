@@ -1,0 +1,35 @@
+{
+  "agent_type": "antmaze",
+  "learner_type": "HierarchicalDistance",
+  "train_type": "ppo",
+
+  "learning_rate": 0.001,
+  "epoch_lr_decay": 1.0,
+  "norm_advantage": 1,
+
+  "cycles_per_epoch": 20,
+  "rollouts_per_cycle": 1,
+  "update_epochs_per_rollout": 2,
+
+  "eval_iters": 20,
+  "greedy_eval": 0,
+
+  "agent_params": {
+    "env_params": {
+      "n": 500,
+      "maze_type": "AntMaze",
+      "hardmode": 1
+    },
+    "rollouts": 4,
+    "n_mini_batches": 4,
+    "shaped_type": "off",
+    "gae_lambda": 0.98,
+    "entropy_lambda": 0.025,
+
+    "entropy_lambda_lo": 0.02,
+    "n_lo_epochs": 2,
+    "hi_skip": 20,
+
+    "im_params": {"type": "icm", "nu": 0.01, "lambda": 0.05}
+  }
+}

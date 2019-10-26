@@ -1,16 +1,16 @@
 {
-  "agent_type": "pixgrid",
+  "agent_type": "maze",
   "learner_type": "HER",
-  "train_type": "dqn",
+  "train_type": "ddpg",
 
   "learning_rate": 0.001,
   "updates_per_cycle": 40,
   "cycles_per_epoch": 50,
   "rollouts_per_cycle": 4,
 
-  "batch_size": 128,
-  "min_buffer_size": 200,
-  "buffer_capacity": 500000,
+  "batch_size": 64,
+  "min_buffer_size": 256,
+  "buffer_capacity": 100000,
 
   "eval_iters": 20,
   "greedy_eval": 1,
@@ -18,8 +18,11 @@
   "agent_params": {
     "env_params": {
       "n": 50,
-      "w": 13
+      "maze_type": "square_large"
     },
-    "epsilon": 0.2
+    "noise": 0.1,
+    "epsilon": 0.2,
+    "action_l2_lambda": 0.25,
+    "gamma": 0.98
   }
 }

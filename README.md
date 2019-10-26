@@ -16,7 +16,7 @@ A directory corresponding to the name of the config file will be created inside 
 
 To train an agent on the 2D Point Maze using Sibling Rivalry, run:
 ```
-python main.py --config-path examples/pointmaze-test.json --log-dir <LOG DIRECTORY PATH> --dur 50 --N 20
+python main.py --config-path examples/pointmaze/pointmaze-ppo-sr.json --log-dir <LOG DIRECTORY PATH> --dur 50 --N 20
 ```
 Successful episodes should begin to occur around the 10th-15th training epoch.
 

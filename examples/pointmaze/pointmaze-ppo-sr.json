@@ -2,12 +2,15 @@
   "agent_type": "maze",
   "learner_type": "SiblingRivalry",
   "train_type": "ppo",
+
   "learning_rate": 0.001,
   "epoch_lr_decay": 0.95,
   "norm_advantage": 1,
+
   "cycles_per_epoch": 50,
   "rollouts_per_cycle": 1,
   "update_epochs_per_rollout": 4,
+
   "eval_iters": 20,
   "greedy_eval": 0,
 
@@ -16,11 +19,14 @@
       "n": 50,
       "maze_type": "square_large"
     },
+
     "rollouts": 2,
     "n_mini_batches": 4,
+
     "shaped_type": "terminal",
     "gae_lambda": 0.98,
     "entropy_lambda": 0.025,
+
     "use_antigoal": 1,
     "sibling_epsilon": 5.0
   }
