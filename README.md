@@ -1,6 +1,8 @@
 # Keeping Your Distance: Solving Sparse Reward TasksUsing Self-Balancing Shaped Rewards
 Authors: Alexander Trott, Stephan Zheng, Caiming Xiong, and Richard Socher
 
+Link to paper: https://arxiv.org/abs/1911.01417
+
 This code provides an implementation of Sibling Rivalry and can be used to run the experiments presented in the paper.
 Experiments are run using PyTorch (1.3.0) and make reference to OpenAI Gym.
 In order to perform AntMaze experiments, you will need to have Mujoco installed (with a valid license).
